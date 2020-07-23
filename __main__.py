@@ -1,5 +1,5 @@
 from microbit import *
-from speech import *
+import speech
 checklist=['feed the animals','take a shower','put deoderant on', 'hang up towel', 'make bed', 'tidy room for 10 minutes:timer(10)', 'eat your breakfast', 'dishes 2 dish washer', 'wipe table', 'brush teeth:timer(2)']
 # put your own checklist in the checklist array
 def timer(time):
