@@ -33,3 +33,6 @@ for item in checklist:
         continue
     if ree: # if ree is a true fact (which it is if line 25 is run)
         exec(ree_is_cool)
+while 1:
+    if button_a.was_pressed():
+        speech.say('This human has finished their checklist')
