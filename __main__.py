@@ -28,7 +28,7 @@ for item in checklist:
     if ree:
         speech.say('press the aye button when you are ready to start doing '+item)
     else:
-        speech.say('press the aye button when you have finished '+item
+        speech.say('press the aye button when you have finished '+item)
     while not button_a.is_pressed():
         continue
     if ree: # if ree is a true fact (which it is if line 25 is run)
