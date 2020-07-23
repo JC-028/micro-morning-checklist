@@ -13,7 +13,7 @@ speech.say('YEET')
 display.show(Image.HEART)
 sleep(1000)
 display.scroll('PRESS A')
-speech.say('to start doing the checklist, press the A button on the left side of the micro bit')
+speech.say('to start doing the checklist, press the A button')
 display.show(Image.ARROW_W)
 while not button_a.is_pressed():
     continue
