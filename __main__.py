@@ -3,11 +3,9 @@ import speech
 checklist=['feed the animals','take a shower','put deoderant on', 'hang up towel', 'make bed', 'tidy room for ten minutes:timer(600000)', 'eat your breakfast', 'dishes 2 dish washer', 'wipe table', 'brush teeth 4 2 minutes:timer(120000)']
 # put your own checklist in the checklist array
 def timer(time):
-    sec=time
-    while sec != 0:
-        sec-=1
-        sleep(1000)
-        display.show(str(sec),wait=False)
+    speech.say('micro morning checklist is counting down')
+    sleep(time)
+    speech.say('the timer is up')
 display.scroll('Are you ready 4 the checklist?')
 speech.say('are you ready 4 the checklist')
 display.show(Image.HEART)
@@ -30,5 +28,5 @@ for item in checklist:
     speech.say('press the aye button when you are ready to start doing '+item)
     while not button_a.is_pressed():
         continue
-    if ree: # if ree is a true fact (which it is, see line 25)
+    if ree: # if ree is a true fact (which it is if line 25 is run)
         exec(ree_is_cool)
