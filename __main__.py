@@ -25,7 +25,10 @@ for item in checklist:
     speech.say(item)
     display.scroll(item)
     sleep(1000)
-    speech.say('press the aye button when you are ready to start doing '+item)
+    if ree:
+        speech.say('press the aye button when you are ready to start doing '+item)
+    else:
+        speech.say('press the aye button when you have finished '+item
     while not button_a.is_pressed():
         continue
     if ree: # if ree is a true fact (which it is if line 25 is run)
